@@ -5,8 +5,8 @@
 :root {
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(208, 92%, 54%);
-  --first-color-alt: hsl(208, 88%, 50%);
+  --first-color: hsla(3, 92%, 54%, 0.641);
+  --first-color-alt: hsla(3, 92%, 54%, 0.641);
   --title-color: hsl(220, 68%, 4%);
   --white-color: hsl(0, 0%, 100%);
   --text-color: hsl(220, 15%, 66%);
@@ -236,7 +236,7 @@ img {
   color: var(--first-color-alt);
 }
 
-.login__access, 
+.login__access,
 .login__register {
   position: absolute;
   left: 0;
@@ -252,7 +252,7 @@ img {
 }
 
 /* Input focus move up label */
-.login__input:focus ~ .login__label {
+.login__input:focus~.login__label {
   transform: translateY(-12px);
   font-size: var(--tiny-font-size);
 }
@@ -262,7 +262,7 @@ img {
 }
 
 /* Input focus sticky top label */
-.login__input:not(:placeholder-shown).login__input:not(:focus) ~ .login__label {
+.login__input:not(:placeholder-shown).login__input:not(:focus)~.login__label {
   transform: translateY(-12px);
   font-size: var(--tiny-font-size);
 }
@@ -276,8 +276,8 @@ img {
   border-color: var(--first-color);
 }
 
-.login__input:focus ~ .login__label,
-.login__input:focus ~ .login__icon {
+.login__input:focus~.login__label,
+.login__input:focus~.login__icon {
   color: var(--first-color);
 }
 
@@ -326,20 +326,25 @@ img {
     width: 460px;
     margin: initial;
   }
-  .login__access, 
+
+  .login__access,
   .login__register {
     width: 600px;
   }
+
   .login__title {
     text-align: initial;
     margin-bottom: 3rem;
   }
+
   .login__button {
     margin-bottom: 3rem;
   }
+
   .login__group {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .login__blob {
     display: block;
     height: 100vh;
@@ -347,6 +352,7 @@ img {
     top: 0;
     right: 0;
   }
+
   .login__img {
     transform: translate(0rem, 0rem);
   }
