@@ -34,5 +34,5 @@
    ```bash
    git clone https://github.com/HelderGoma/RegistrationForm.git
 2. Перейди в директорию:
-   ```cd RegistrationForm
+```cd RegistrationForm
 3. Открой файл index.html в браузере: file:///…/RegistrationForm/index.html
